@@ -22,4 +22,4 @@ EXPOSE 80
 COPY nginx-default.conf.template /etc/nginx/default.conf.template
 COPY docker-entrypoint.sh /
 ENV SHELL /bin/bash
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/docker-entrypoint.sh"]
